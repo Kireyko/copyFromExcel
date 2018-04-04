@@ -18,7 +18,6 @@ public class parseExcelFile {
     private static Map<String, ArrayList<Date>> shiftsMapDate = new LinkedHashMap<>();
     private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm");
 
-
     public parseExcelFile(String filePath, int sheetInd, int month ) throws IOException, InvalidFormatException {
         this.month=month;
         Workbook workbook = WorkbookFactory.create(new File(filePath));
